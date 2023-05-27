@@ -44,7 +44,8 @@ def matplotlibAlcohol(df):
 # 2.1 plot1
 def boxplot(df):
     df.boxplot(column=["freetime"], by=["Dalc"])
-    plt.title("2.1 Зависимость ежедневного употребления алкоголя \n от свободного времени ученика")
+    plt.suptitle('')
+    plt.title("\n\n2.1 Зависимость ежедневного употребления алкоголя \n от свободного времени ученика")
     plt.show()
 
 
@@ -67,16 +68,12 @@ def plotTopMarks(df):
 # 3.1 Seaborn .pairplot
 def pairplot(df):
     sns.pairplot(data=df, vars=["health", "famrel", "Dalc"])
-    plt.title("3.1 Диаграммы рассеивания, показывающие зависимости между параметрами 'здоровье',\n 'семейные "
-              "отношения' , 'ежедневное употребление алкоголя'")
     plt.show()
 
 
 # 3.2 Seaborn .jointplot
 def jointplot(df):
     sns.jointplot(data=df, x="health", y="famrel", palette='bright', hue='famrel')
-    plt.title("3.2 Сводная диаграмма, показывающие зависимости между параметрами 'здоровье' и\n 'семейные "
-              "отношения'")
     plt.show()
 
 
@@ -109,5 +106,5 @@ def heatmam(df):
 
 # 4 Plotly
 def plotly(df):
-    fig = px.sunburst(df, path=['Pstatus','guardian','freetime'], values='absences',title="Диаграмма солнечных лучей")
+    fig = px.sunburst(df, path=['Pstatus','guardian','freetime'], values='absences')
     fig.show()

@@ -77,27 +77,53 @@ G2 - оценка за второй экзамен (от 0 до 20)
 
 G3 - оценка за третий экзамен (от 0 до 20)
 
-**Опериции:**
+**Графики:**
+
+1.1 Построить любой график (любого рода) с помощью чистого matplotlib:
+
+![1.1.PNG](static%2Fimages%2F1.1.PNG)
+
+1.2 Построить несколько суб-графиков на одном графике, используя .subplot:
+
+![1.2.PNG](static%2Fimages%2F1.2.PNG)
+
+2 На основе Вашего датасета построить три разных вида графиков используя pandas.DataFrame.plot / Series.plot:
+
+boxplot:
 ![2.1.PNG](static%2Fimages%2F2.1.PNG)
+
+scatter:
 ![2.2.PNG](static%2Fimages%2F2.2.PNG)
+
+bar:
 ![2.3.PNG](static%2Fimages%2F2.3.PNG)
-![2.4.PNG](static%2Fimages%2F2.4.PNG)
-![2.5.PNG](static%2Fimages%2F2.5.PNG)
-![2.6.PNG](static%2Fimages%2F2.6.PNG)
-![2.7.PNG](static%2Fimages%2F2.7.PNG)
-![2.8.PNG](static%2Fimages%2F2.8.PNG)
 
-2.9. создание нового поля вычисленного на основе значений других полей:
-![2.9.1.PNG](static%2Fimages%2F2.9.1.PNG)
-![2.9.2.PNG](static%2Fimages%2F2.9.2.PNG)
-![2.9.3.PNG](static%2Fimages%2F2.9.3.PNG)
+3 Seaborn:
 
-![2.10.PNG](static%2Fimages%2F2.10.PNG)
+.pairplot:
 
-2.11 вычислить несколько статистик по колонкам (используйте встроенные агрегатные функции — любые на выбор)
-![2.11.1.PNG](static%2Fimages%2F2.11.1.PNG)
-![2.11.2.PNG](static%2Fimages%2F2.11.2.PNG)
+3.1 Диаграммы рассеивания, показывающие зависимости между параметрами 'здоровье','семейные отношения', 'ежедневное употребление алкоголя':
+![3.1.PNG](static%2Fimages%2F3.1.PNG)
 
-![2.12.PNG](static%2Fimages%2F2.12.PNG)
-![2.13.PNG](static%2Fimages%2F2.13.PNG)
-![2.14.PNG](static%2Fimages%2F2.14.PNG)
+.jointplot:
+
+3.2 Сводная диаграмма, показывающие зависимости между параметрами 'здоровье' и 'семейные отношения':
+![3.2.PNG](static%2Fimages%2F3.2.PNG)
+
+.violinplot:
+
+![3.3.PNG](static%2Fimages%2F3.3.PNG)
+
+.heatmap:
+
+![3.4.PNG](static%2Fimages%2F3.4.PNG)
+
+4 Построить любой график (связанный с вашими данными) с помощью plotly:
+
+Диаграмма солнечных лучей:
+
+![4.1.PNG](static%2Fimages%2F4.1.PNG)
+
+Пример диаграммы при выбранных параметрах "Т" и "mother" + всплывающее окно с данными выбранных параметров:
+
+![4.2.PNG](static%2Fimages%2F4.2.PNG)
