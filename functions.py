@@ -106,5 +106,5 @@ def heatmam(df):
 
 # 4 Plotly
 def plotly(df):
-    fig = px.sunburst(df, path=['Pstatus','guardian','freetime'], values='absences')
+    fig = px.sunburst(df, path=['Pstatus', 'guardian', 'freetime'], values='absences')
     fig.show()
